@@ -1,0 +1,16 @@
+- Text :
+
+    val clickOnText = {
+        println("Text Clicked")
+    }
+
+    Text(
+        text = "Ad ${stringResource(id = R.string.hello_world)}",
+        color = Color.Red,
+        fontSize = 32.sp,
+        fontStyle = FontStyle.Italic,
+        modifier = Modifier.padding(22.dp).background(Color.Black).clickable(onClick = clickOnText)
+    )
+
+
+-
