@@ -1,3 +1,22 @@
+Text
+Box
+Column
+Row
+Alignment & Arrangements
+Button
+Image
+TopAppBar
+NavigationDrawer
+
+
+Coroutine
+Flow
+Testing
+MVVM
+Kotlin
+
+----------------------------------------------------------------------------------------------------
+
 - Text :
 
     val clickOnText = {
@@ -13,4 +32,85 @@
     )
 
 
--
+----------------------------------------------------------------------------------------------------
+
+For column - horizontal aligment works
+For row - vertical alignment works
+
+For column - vertical arrangement works
+For row - horizontal arrangement works
+
+Row  ----  Alignment.Top, CenerVertically, Bottom
+Row  --->  Arrangement.start, center, end , space between, space around, space evenly, absolute.Right, absolute.Left, absolute.center
+                                                                                        absolute.spacebet, absolute.spacearound, absolute.spaceevenly
+Column --> Arrangement.Top, center, bottom, space between, space evenly, space around
+
+
+Box has only alignment, not arrangement
+
+
+----------------------------------------------------------------------------------------------------
+Button
+
+
+----------------------------------------------------------------------------------------------------
+Image
+
+
+----------------------------------------------------------------------------------------------------
+State - It is a mutable variable that triggers recomposition when its value changes, which allow UI automatically reflected  updated state
+        It is a key concept of managing and updating UI elements dynamically
+
+State  vs Variable
+----------------------
+
+1. Recomposition
+---
+State     - When its value change, it triggers recomposition
+Variable  - Regular variable do not trigger recomposition
+
+2. Observability
+---
+State    - It enables observability
+Variable - It does not enables observability
+
+3. Mutability vs Immutability
+---
+State    -  State are mutable which can modify within composition function
+Variable -  Variables are immutable
+
+4. Scoped to Composables
+---
+State   - State are scoped to composable functions, ensures that state is localized and specific to UI components
+Variable - Regular variable has broader scope
+
+
+
+
+What is by?
+-----------
+It is a keyword, used in conjunction with delegate pattern to create delegate properties
+
+Delegated properties allow to implement getter and setter logic
+for property in seperate class.
+
+
+What is remember?
+-----------------
+Remember is a function, used to retain state across recomposition.
+It is useful for preserving stateful data wihtout recomuting and resetting during UI updates
+
+
+What is statefull and stateless?
+--------------------------------
+Stateful means it has memory of previous request
+Stateless means it has no memory of previous request
+
+
+mutableStateof()
+----------------
+It is a function that creates mutable state variable
+
+It return a pair containing current value and setter function,
+Allowing modification of the state and triggering UI recomposition when the value changes.
+
