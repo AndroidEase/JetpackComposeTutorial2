@@ -33,12 +33,8 @@ Kotlin
 
 
 ----------------------------------------------------------------------------------------------------
-
-For column - horizontal aligment works
-For row - vertical alignment works
-
-For column - vertical arrangement works
-For row - horizontal arrangement works
+For column - vertical arrangement works, horizontal Alignment works
+For row - horizontal arrangement works, vertical Alignment works
 
 Row  ----  Alignment.Top, CenerVertically, Bottom
 Row  --->  Arrangement.start, center, end , space between, space around, space evenly, absolute.Right, absolute.Left, absolute.center
